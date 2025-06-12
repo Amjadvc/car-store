@@ -85,9 +85,11 @@ function Help() {
 
   return (
     <main className={styles.help}>
-      <PageNav className={styles.helpNav} />
-
-      <img src={cartBg} alt="bg" className={styles.bg}></img>
+      <PageNav className={styles.helpNav}>
+        <div className="imgBgHolder">
+          <img src={cartBg} alt="bg" className="bg"></img>
+        </div>
+      </PageNav>
 
       <div className={`container ${styles.helpContainer}`}>
         <PageHeader>Help</PageHeader>

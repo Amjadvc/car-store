@@ -36,7 +36,8 @@ const mainImageVariants = {
 };
 
 function DetailsSlider({ matchedCar }) {
-  const { make, engine, slderImge, model } = matchedCar;
+  const { make, engine, batteryCapacity, fuelType, slderImge, model } =
+    matchedCar;
   const [sliderIndex, setSliderIndex] = useState(0);
 
   function handelIndex(i) {
@@ -76,15 +77,18 @@ function DetailsSlider({ matchedCar }) {
         <h3 className={`${styles.carName} `}>
           {make === "Mercedes-Benz" ? "Mercedes" : make} - {model}
         </h3>
-        {/* <p className={styles.capacity}>{engineCopacity} cc</p> */}
-        <p className={styles.capacity}>{engine} cc</p>
+        <p className={styles.capacity}>
+          {fuelType === "Electric"
+            ? batteryCapacity && `${batteryCapacity} kWh`
+            : engine && `${engine} cc`}
+        </p>
       </motion.div>
       <div className={styles.imgeSliderInner}>
         <div className={styles.activeImge}>
           <motion.img
             className={`${styles.mainImage}`}
-            src={slderImge[sliderIndex]}
-            alt="active imge"
+            src={slderImge[sliderIndex]["url"]}
+            alt={slderImge[sliderIndex]["alt"]}
             variants={mainImageVariants}
             initial="hidden"
             animate="visible"
@@ -94,9 +98,9 @@ function DetailsSlider({ matchedCar }) {
           <button onClick={handelDecreaseSlider}>
             <img src={arrowLeft} alt="arrowLeft" />
           </button>
-          {slderImge.map((img, index) => (
+          {slderImge.map((imgObj, index) => (
             <ImgItem
-              img={img}
+              imgObj={imgObj}
               index={index}
               handelIndex={handelIndex}
               sliderIndex={sliderIndex}

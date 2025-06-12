@@ -1,5 +1,7 @@
 import styles from "./CarItem.module.css";
 import seatorImg from "../../assets/svg/carListIconOne.svg";
+import electricFueling from "../../assets/svg/electric-refueling.svg";
+import gasDieselFueling from "../../assets/svg/gas-diesel.svg";
 import manualImg from "../../assets/svg/carListIconTwo.svg";
 import speedImg from "../../assets/svg/carListIconThree.svg";
 import Button from "../Button/Button";
@@ -48,21 +50,26 @@ export default function CarItem({ item }) {
 
         <div className={styles.properties}>
           <div className={styles.inner}>
-            <img src={seatorImg} alt="seator svg" />
+            <img
+              src={fuelType === "Electric" ? electricFueling : gasDieselFueling}
+              alt="fuelType svg"
+            />
             <p>
               <span>{fuelType}</span>
             </p>
           </div>
           <div className={styles.inner}>
-            <img src={manualImg} alt="seator svg" />
+            <img src={manualImg} alt="transmission svg" />
             <p>{transmission}</p>
           </div>
           <div className={styles.inner}>
-            <img src={speedImg} alt="seator svg" />
-            <p>{horsepower}KM/1-lt</p>
+            <img src={speedImg} alt="speed svg" />
+            <p>{horsepower} HP</p>
           </div>
         </div>
-        <p>Starting at ${price}/Day</p>
+        <p>
+          Own it from <span className={styles.priceH}>${price}</span>
+        </p>
       </div>
       <div className={styles.buttons}>
         <Link to={`details/${item.id}`}>

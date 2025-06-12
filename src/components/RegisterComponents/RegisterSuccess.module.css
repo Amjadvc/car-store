@@ -41,7 +41,7 @@
 .successContainer h1 {
   font-family: sans-serif;
   font-size: 45px;
-  color: #263238;
+  color: #fff;
 }
 
 @media (max-width: 360px) {

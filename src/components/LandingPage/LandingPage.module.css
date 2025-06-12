@@ -20,9 +20,29 @@
 }
 .mainText {
   font-family: "Roboto", sans-serif;
-  font-size: 62px;
+  font-size: 66px;
   font-weight: 400;
   margin-bottom: 28px;
+}
+.highlight {
+  color: #b17f82;
+  font-weight: 500;
+  padding-right: 16px;
+}
+
+.waveText span {
+  display: inline-block;
+  animation: wave 2s ease-in-out infinite;
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 .textFooter {
@@ -106,7 +126,7 @@
   }
   .content {
     width: 280px;
-    margin: 46px 0 112px 0;
+    margin: 24px 0 112px 0;
     gap: 16px;
   }
   .textFooter {
@@ -115,6 +135,9 @@
 
   .landingCarBg {
     min-width: 490px;
+  }
+  .mainText {
+    font-size: 34px;
   }
 }
 @media (max-width: 360px) {

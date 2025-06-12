@@ -32,8 +32,11 @@ function Cart() {
 
   return (
     <main className={styles.cart}>
-      <PageNav className={styles.cartNav} />
-      <img src={cartBg} alt="bg" className={styles.bg}></img>
+      <PageNav className={styles.cartNav}>
+        <div className="imgBgHolder">
+          <img src={cartBg} alt="bg" className="bg"></img>
+        </div>
+      </PageNav>
 
       <div className={`container ${styles.cartContainer}`}>
         <PageHeader> My Cart</PageHeader>

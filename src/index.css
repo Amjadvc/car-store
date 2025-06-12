@@ -20,6 +20,9 @@
   --color-theard-6: #9d2577;
   --color-theard-7: #b06868;
   --color-theard-8: #963b5a;
+  --color-theard-9: #d8a9ad;
+  --color-theard-10: #544f4f;
+  --color-theard-11: #a87b7d;
 }
 
 * {
@@ -30,6 +33,7 @@
 
 body {
   min-height: 100vh;
+  background-color: #f4f4f4;
 }
 
 a {
@@ -67,4 +71,67 @@ ul {
 .react-multi-carousel-item {
   display: flex;
   justify-content: center;
+}
+
+.imgBgHolder {
+  position: relative;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .imgBgHolder {
+    max-width: 1000px;
+  }
+}
+@media (max-width: 992px) {
+  .imgBgHolder {
+    max-width: 700px;
+  }
+}
+@media (max-width: 768px) {
+  .imgBgHolder {
+    max-width: 500px;
+  }
+}
+@media (max-width: 480px) {
+  .imgBgHolder {
+    max-width: 400px;
+  }
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: -364px;
+  width: 116%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+  .bg {
+    width: 125%;
+  }
+}
+@media (max-width: 992px) {
+  .bg {
+    width: 182%;
+  }
+}
+
+@media (max-width: 768px) {
+  .bg {
+    top: 47px;
+    width: 205%;
+    left: -202px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bg {
+    left: -163px;
+    top: 115px;
+    width: 184%;
+  }
 }

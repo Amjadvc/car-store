@@ -1,7 +1,7 @@
 .help {
   position: relative;
-  /* // */
   min-height: 40vh;
+  overflow: hidden;
 }
 
 @media (max-width: 769px) {
@@ -13,61 +13,6 @@
 @media (max-width: 769px) {
   .helpNav {
     background-color: var(--color-secodery-2);
-  }
-}
-
-.bg {
-  position: absolute;
-  top: 0;
-  left: -181px;
-  height: 109vh;
-  width: 100%;
-  object-fit: fill;
-  z-index: -1;
-}
-
-/* @media (min-width: 2000px), (min-height: 1000px) {
-  .bg {
-    height: 67% !important;
-    width: 100% !important;
-    object-fit: contain !important;
-    top: -49px !important;
-  }
-} */
-
-@media (min-width: 2000px) {
-  .bg {
-    display: none;
-  }
-}
-
-@media (max-width: 1200px) {
-  .bg {
-    left: -160px;
-    height: 93vh;
-    width: 98%;
-  }
-}
-@media (max-width: 992px) {
-  .bg {
-    left: 0px;
-    height: 96vh;
-    width: 100%;
-    object-fit: cover;
-  }
-}
-@media (max-width: 769px) {
-  .bg {
-    left: 0px;
-    top: 177px;
-    height: 53vh;
-    width: 121%;
-    object-fit: cover;
-  }
-}
-@media (max-width: 480px) {
-  .bg {
-    height: 33vh;
   }
 }
 

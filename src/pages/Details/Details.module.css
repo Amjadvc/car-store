@@ -1,5 +1,5 @@
 .bgColor {
-  background-color: var(--color-primary-2);
+  background-color: #f4f4f4;
 }
 .theamBgColor {
   color: #e7d6d6 !important;
@@ -16,6 +16,8 @@
   overflow: hidden;
   padding-top: 59px;
   padding-bottom: 39px;
+  max-width: 1700px;
+  margin: 0 auto;
 }
 .details {
   position: relative;
@@ -25,12 +27,51 @@
   justify-content: center;
   padding-top: 59px;
   padding-bottom: 39px;
-  min-height: 66vh;
+}
+
+@media (min-width: 1500px) {
+  .details {
+    padding-top: 119px;
+  }
 }
 
 @media (max-width: 769px) {
   .details {
     padding-bottom: 0;
+  }
+}
+@media (max-width: 480px) {
+  .details {
+    padding-top: 24px;
+  }
+}
+
+.bg {
+  position: absolute;
+  transform: rotate(353deg);
+  z-index: -1;
+  width: 54%;
+  right: -74px;
+  top: 27px;
+}
+
+@media (max-width: 1200px) {
+  .bg {
+    width: 64%;
+    right: -98px;
+  }
+}
+@media (max-width: 992px) {
+  .bg {
+    transform: rotate(355deg);
+    top: 15px;
+    right: -73px;
+  }
+}
+
+@media (max-width: 769px) {
+  .bg {
+    display: none;
   }
 }
 

@@ -63,7 +63,7 @@
 
 @media (max-width: 768px) {
   .imeContainer {
-    background: #4a4a4a;
+    background: var(--color-primary-2);
     width: 45px;
     height: 45px;
   }
@@ -88,6 +88,12 @@
   color: var(--color-primary-2);
   background: #8b6569;
   border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .cartCount {
+    background: #3f434f;
+  }
 }
 
 .nav .register {
@@ -169,22 +175,29 @@
     top: 50%;
     left: 50%;
     z-index: 1;
-    border: 2px solid var(--color-primary-1);
+    border: 2px solid var(--color-theard-9);
+  }
+
+  .nav .listTwo {
+    box-shadow: 0px 7px 14px -4px var(--color-theard-10);
+  }
+  .line::before {
+    background-color: var(--color-primary-2);
   }
 
   .nav .listOne {
-    background: var(--color-secodery-4);
+    background: var(--color-theard-11);
     transform: translate(-50%, 32%);
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    opacity: 0.9;
+    opacity: 0.95;
   }
   .nav .listTwo {
-    background: var(--color-secodery-4);
+    background: var(--color-theard-11);
     transform: translate(-50%, 193%);
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    opacity: 0.9;
+    opacity: 0.95;
   }
 
   .nav li {
@@ -196,11 +209,22 @@
     margin: 10px 0;
     padding: 13px;
   }
+  .nav .link {
+    color: #24272e;
+  }
+
+  .nav a:global(.active) {
+    color: var(--color-primary-2);
+  }
+
+  .nav li:hover .link:not(.link:nth-last-child(1)) {
+    color: var(--color-primary-2);
+  }
 
   .nav .register {
-    border: 1px solid #483133;
+    border: 1px solid var(--color-primary-2);
     border-radius: 32px;
-    color: #582d32;
+    color: var(--color-primary-2);
     height: 40px;
     margin: 0 auto;
     width: 80%;

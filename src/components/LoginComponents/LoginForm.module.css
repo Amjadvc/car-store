@@ -21,13 +21,14 @@
   font-size: 48px;
   font-family: sans-serif;
   font-weight: bold;
-  color: var(--color-theard-2);
+  color: var(--color-primary-2);
 }
 
 .underLine {
-  width: 15%;
+  width: 25%;
   height: 6px;
-  background: var(--color-theard-2);
+  /* background: var(--color-theard-2); */
+  background-image: linear-gradient(45deg, #e0a4aa, #fff);
   border-radius: 9px;
 }
 .inputs {
@@ -49,7 +50,7 @@
 .inputContainer label {
   font-family: sans-serif;
   font-weight: bold;
-  color: #584f50;
+  color: #fff;
   margin-bottom: 3px;
   display: flex;
   gap: 6px;
@@ -65,14 +66,14 @@
   display: none;
 }
 .valid {
-  color: var(--color-theard-7);
+  color: #fff;
   width: 10px;
   height: 10px;
   padding: 1px;
 }
 
 .invalid {
-  color: var(--color-theard-7);
+  color: #b01a4d;
   width: 13px;
   height: 13px;
 }
@@ -210,6 +211,7 @@
   box-shadow: 0px 8px 6px -4px var(--color-theard-4);
 }
 .submitContainer button:disabled {
-  background: var(--color-theard-5);
+  /* background: var(--color-theard-5); */
+  opacity: 0.7;
   cursor: not-allowed;
 }

@@ -39,6 +39,7 @@ const landingCarBgVariants = {
 };
 
 function LandingPage() {
+  const currentYear = new Date().getFullYear();
   return (
     <div className={`container ${styles.homeContainr}`}>
       <motion.div
@@ -47,11 +48,20 @@ function LandingPage() {
         initial="hidden"
         animate="visible"
       >
-        <p className={styles.textHeader}>Arriving Summer 2019</p>
-        <h2 className={styles.mainText}>MAKE EVERY DAY LEGENDARY.</h2>
+        <p className={styles.textHeader}>Arriving Summer {currentYear}</p>
+        <h1 className={styles.mainText}>
+          <span className={`${styles.highlight} ${styles.waveText}`}>
+            {"MAKE".split("").map((char, i) => (
+              <span key={i} style={{ animationDelay: `${i * 0.1}s` }}>
+                {char}
+              </span>
+            ))}
+          </span>
+          EVERY DAY LEGENDARY.
+        </h1>
         <p className={styles.textFooter}>
-          The culmimination of comfort,luxury,and powerrul living is embodied in
-          the First-Ever BMWX7 -the biggest BMW ever built.
+          The perfect fusion of comfort, luxury, and power awaits — own your
+          dream car today and drive into the future with style and confidence.
         </p>
         <Link to={"/catalogue"}>
           <Button>EXPLORE</Button>

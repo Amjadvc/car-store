@@ -5,13 +5,12 @@ import PageNav from "../../components/PageNav/PageNav";
 import Slider from "../../components/Slider/Slider";
 import Footer from "../../components/Footer/Footer";
 import HomeList from "../../components/HomeListComponents/HomeList";
-import dataCarItems from "./data/dummyCars.json";
+import dataCarItems from "../../data/dummyCarsHome.json";
 import { HomeVariantsProvider } from "../../context/HomeVariantsContext";
 import { useState } from "react";
 
 export default function Home() {
   const [dummyData] = useState(dataCarItems);
-  // console.log(dummyData);
 
   return (
     <div>

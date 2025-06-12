@@ -26,8 +26,11 @@ function Register() {
 
   return (
     <main className={styles.register}>
-      <PageNav className={styles.registerNav} />
-      <img src={cartBg} alt="bg" className={styles.bg}></img>
+      <PageNav className={styles.registerNav}>
+        <div className="imgBgHolder">
+          <img src={cartBg} alt="bg" className="bg"></img>
+        </div>
+      </PageNav>
 
       <div className={`container ${styles.registerContainer}`}>
         <PageHeader>Register</PageHeader>

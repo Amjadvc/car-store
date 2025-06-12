@@ -25,9 +25,9 @@
   /* display: flex; */
   display: none;
 }
-.addedFromHome {
+/* .addedFromHome {
   background-image: linear-gradient(45deg, #4caf50, #8ac24a, #de5d89, #de5d89);
-}
+} */
 
 @media (max-width: 360px) {
   .popupContainer {
@@ -38,16 +38,18 @@
   }
 }
 .symbol {
-  color: #78d30f;
+  color: #ffffff;
   font-size: 25px;
 }
 .addedFromHome .symbol {
-  color: #8f3352;
+  color: #ffffff;
 }
 
 .active {
   display: flex;
-  animation: fadeIn 0.5s, fadeOut 0.5s 1s;
+  animation-timing-function: ease, ease; /* or whatever timing you need */
+  animation-fill-mode: forwards, forwards;
+  animation: fadeIn 0.5s, fadeOut 0.5s 1.5s;
 }
 
 @keyframes fadeIn {

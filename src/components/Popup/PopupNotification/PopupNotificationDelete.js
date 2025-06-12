@@ -7,7 +7,7 @@ const PopupNotificationDelete = forwardRef(({ message, styless }, ref) => {
       setsShowPopupDSuccess(true);
       setTimeout(() => {
         setsShowPopupDSuccess(false);
-      }, 1500);
+      }, 1750);
     },
   }));
   return (

@@ -1,7 +1,7 @@
 import styles from "./DetailsContent.module.css";
 import DetalisTriangle from "../DetailsSvg/DetalisTriangle";
 import StarList from "../Star/StarList";
-import detailBg from "../../assets/svg/bg.svg";
+// import detailBg from "../../assets/svg/bg.svg";
 import Button from "../Button/Button";
 import DetailsHeader from "./DetailsHeader";
 import { useRef, useState } from "react";
@@ -42,6 +42,8 @@ function DetailsContent({ matchedCar }) {
     make,
     model,
     engine,
+    batteryCapacity,
+    fuelType,
     horsepower,
   } = matchedCar;
 
@@ -78,7 +80,6 @@ function DetailsContent({ matchedCar }) {
 
   return (
     <div className={styles.content}>
-      <img src={detailBg} className={styles.bg} alt="backgroundImage" />
       <DetalisTriangle />
       <motion.h3
         variants={contentH3Variants}
@@ -106,9 +107,11 @@ function DetailsContent({ matchedCar }) {
       >
         <DetailsHeader>Description</DetailsHeader>
         <p>
-          {`The culmimination of comfort,
-          ${make} ${model}. This vehicle, featuring a ${engine} engine, delivers
-          ${horsepower} horsepower for a thrilling drive.`}
+          {`The culmimination of comfort, ${make} ${model}. This vehicle, featuring a ${
+            fuelType === "Electric"
+              ? `${batteryCapacity} kWh battery`
+              : `${engine} cc engine`
+          }, delivers ${horsepower} horsepower for a thrilling drive.`}
         </p>
       </motion.div>
 

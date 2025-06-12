@@ -44,43 +44,6 @@
   }
 }
 
-.bg {
-  position: absolute;
-  transform: rotate(353deg);
-  z-index: -1;
-  width: 54%;
-  right: -74px;
-  top: 27px;
-}
-
-@media (min-width: 2000px), (min-height: 800px) {
-  .bg {
-    width: 400px !important;
-    transform: rotate(0deg) !important;
-  }
-}
-
-@media (max-width: 1200px) {
-  .bg {
-    width: 64%;
-    right: -98px;
-  }
-}
-@media (max-width: 992px) {
-  .bg {
-    transform: rotate(355deg);
-    top: 15px;
-    width: 73%;
-    right: -73px;
-  }
-}
-
-@media (max-width: 769px) {
-  .bg {
-    display: none;
-  }
-}
-
 .content > h3 {
   font-family: "Righteous", sans-serif;
   font-weight: 400;

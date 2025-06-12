@@ -104,6 +104,11 @@
   }
 }
 
+.priceH {
+  font-weight: 500;
+  color: #36403f;
+}
+
 .properties {
   display: flex;
   justify-content: center;

@@ -24,8 +24,11 @@ function Login() {
 
   return (
     <main className={styles.login}>
-      <PageNav className={styles.loginNav} />
-      <img src={cartBg} alt="bg" className={styles.bg}></img>
+      <PageNav className={styles.loginNav}>
+        <div className="imgBgHolder">
+          <img src={cartBg} alt="bg" className="bg"></img>
+        </div>
+      </PageNav>
 
       <div className={`container ${styles.registerContainer}`}>
         <PageHeader>Login</PageHeader>

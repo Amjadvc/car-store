@@ -4,6 +4,7 @@ import DetailsSlider from "../../components/DetailsSlider/DetailsSlider";
 import DetailsContent from "../../components/DetailsContent/DetailsContent";
 import { useParams } from "react-router-dom";
 import useCarData from "../../hooks/useCarData";
+import detailBg from "../../assets/svg/bg.svg";
 
 function Details() {
   const { result } = useCarData();
@@ -12,7 +13,6 @@ function Details() {
   const matchedCar = result.filter(
     (carItem) => carItem.id === Number(userId)
   )[0];
-  // console.log(matchedCar);
 
   if (!matchedCar) {
     return <div></div>;
@@ -22,6 +22,7 @@ function Details() {
     <>
       <PageNav className={` ${styles.bgColor}`} />
       <main className={styles.details}>
+        <img src={detailBg} className={styles.bg} alt="backgroundImage" />
         <div className={`container ${styles.detailsContainer}`}>
           <DetailsSlider matchedCar={matchedCar} />
           <DetailsContent matchedCar={matchedCar} />

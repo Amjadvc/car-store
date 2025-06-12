@@ -41,8 +41,11 @@ function ContactUs() {
 
   return (
     <main className={styles.contactUs}>
-      <PageNav className={styles.contactUsNav} />
-      <img src={cartBg} alt="bg" className={styles.bg}></img>
+      <PageNav className={styles.contactUsNav}>
+        <div className="imgBgHolder">
+          <img src={cartBg} alt="bg" className="bg"></img>
+        </div>
+      </PageNav>
 
       <div className={`container ${styles.contactUsContainer}`}>
         <PageHeader>ContactUs</PageHeader>

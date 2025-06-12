@@ -1,0 +1,484 @@
+[
+  {
+    "id": 1,
+    "make": "Tesla",
+    "model": "Model S",
+    "fuelType": "Electric",
+    "transmission": "Automatic",
+    "price": 75000,
+    "horsepower": 670,
+    "batteryCapacity": 100,
+    "color": "red",
+    "year": 2023,
+    "quantity": 1,
+    "rating": 0,
+    "mainImg": "/images/car_list/tesla/tesla.png",
+    "slderImge": [
+      { "alt": "car", "url": "/images/car_list/tesla/tesla.png" },
+      { "alt": "tire", "url": "/images/car_list/tesla/tire.png" },
+      { "alt": "seats", "url": "/images/car_list/tesla/seats.png" },
+      {
+        "alt": "steering wheel",
+        "url": "/images/car_list/tesla/steering-wheel.png"
+      }
+    ]
+  },
+
+  {
+    "id": 2,
+    "make": "Toyota",
+    "model": "Camry",
+    "fuelType": "Gasoline",
+    "transmission": "Automatic",
+    "price": 29000,
+    "horsepower": 203,
+    "engine": 2500,
+    "color": "silver",
+    "year": 2022,
+    "quantity": 1,
+    "rating": 0,
+    "mainImg": "/images/car_list/toyota/toyota.png",
+    "slderImge": [
+      { "alt": "car", "url": "/images/car_list/toyota/toyota.png" },
+      { "alt": "tire", "url": "/images/car_list/toyota/tire.png" },
+      { "alt": "seats", "url": "/images/car_list/toyota/seats.png" },
+      {
+        "alt": "steering wheel",
+        "url": "/images/car_list/toyota/steering-wheel.png"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "make": "BMW",
+    "model": "X5",
+    "fuelType": "Gasoline",
+    "transmission": "Automatic",
+    "price": 75000,
+    "horsepower": 335,
+    "engine": 2998,
+    "color": "gray",
+    "year": 2023,
+    "quantity": 1,
+    "rating": 0,
+    "mainImg": "/images/car_list/bmw/bmw.png",
+    "slderImge": [
+      { "alt": "car", "url": "/images/car_list/bmw/bmw.png" },
+      { "alt": "tire", "url": "/images/car_list/bmw/tire.png" },
+      { "alt": "seats", "url": "/images/car_list/bmw/seats.png" },
+      {
+        "alt": "steering wheel",
+        "url": "/images/car_list/bmw/steering-wheel.png"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "make": "Ford",
+    "model": "Mustang",
+    "fuelType": "Gasoline",
+    "transmission": "Manual",
+    "price": 35000,
+    "horsepower": 310,
+    "engine": 2300,
+    "color": "gold",
+    "year": 2023,
+    "quantity": 1,
+    "rating": 0,
+    "mainImg": "/images/car_list/ford/ford.png",
+    "slderImge": [
+      { "alt": "car", "url": "/images/car_list/ford/ford.png" },
+      { "alt": "tire", "url": "/images/car_list/ford/tire.png" },
+      { "alt": "seats", "url": "/images/car_list/ford/seats.png" },
+      {
+        "alt": "steering wheel",
+        "url": "/images/car_list/ford/steering-wheel.png"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "make": "Jeep",
+    "model": "Grand Cherokee",
+    "fuelType": "Diesel",
+    "transmission": "Automatic",
+    "price": 42000,
+    "horsepower": 260,
+    "engine": 2987,
+    "color": "maroon",
+    "year": 2023,
+    "quantity": 1,
+    "rating": 0,
+    "mainImg": "/images/car_list/jeep/jeep.png",
+    "slderImge": [
+      { "alt": "car", "url": "/images/car_list/jeep/jeep.png" },
+      { "alt": "tire", "url": "/images/car_list/jeep/tire.png" },
+      { "alt": "seats", "url": "/images/car_list/jeep/seats.png" },
+      {
+        "alt": "steering wheel",
+        "url": "/images/car_list/jeep/steering-wheel.png"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "make": "Mercedes",
+    "model": "C-Class",
+    "fuelType": "Gasoline",
+    "transmission": "Automatic",
+    "price": 48000,
+    "horsepower": 255,
+    "engine": 1999,
+    "color": "teal",
+    "year": 2023,
+    "quantity": 1,
+    "rating": 0,
+    "mainImg": "/images/car_list/mercedes/mercedes.png",
+    "slderImge": [
+      { "alt": "car", "url": "/images/car_list/mercedes/mercedes.png" },
+      { "alt": "tire", "url": "/images/car_list/mercedes/tire.png" },
+      { "alt": "seats", "url": "/images/car_list/mercedes/seats.png" },
+      {
+        "alt": "steering wheel",
+        "url": "/images/car_list/mercedes/steering-wheel.png"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "make": "Chevrolet",
+    "model": "Silverado",
+    "fuelType": "Diesel",
+    "transmission": "Automatic",
+    "price": 46000,
+    "horsepower": 277,
+    "engine": 3000,
+    "color": "navy",
+    "year": 2023,
+    "quantity": 1,
+    "rating": 0,
+    "mainImg": "/images/car_list/chevrolet/chevrolet.png",
+    "slderImge": [
+      { "alt": "car", "url": "/images/car_list/chevrolet/chevrolet.png" },
+      { "alt": "tire", "url": "/images/car_list/chevrolet/tire.png" },
+      { "alt": "seats", "url": "/images/car_list/chevrolet/seats.png" },
+      {
+        "alt": "steering wheel",
+        "url": "/images/car_list/chevrolet/steering-wheel.png"
+      }
+    ]
+  },
+
+  {
+    "id": 8,
+    "make": "Audi",
+    "model": "e-tron",
+    "fuelType": "Electric",
+    "transmission": "Automatic",
+    "price": 75000,
+    "horsepower": 355,
+    "batteryCapacity": 95,
+    "color": "coral",
+    "year": 2023,
+    "quantity": 1,
+    "rating": 0,
+    "mainImg": "/images/car_list/audi/audi2.png",
+    "slderImge": [
+      { "alt": "car", "url": "/images/car_list/audi/audi2.png" },
+      { "alt": "tire", "url": "/images/car_list/audi/tire.png" },
+      { "alt": "seats", "url": "/images/car_list/audi/seats.png" },
+      {
+        "alt": "steering wheel",
+        "url": "/images/car_list/audi/steering-wheel.png"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "make": "Honda",
+    "model": "Accord",
+    "fuelType": "Gasoline",
+    "transmission": "Automatic",
+    "price": 28000,
+    "horsepower": 192,
+    "engine": 1500,
+    "color": "crimson",
+    "year": 2023,
+    "quantity": 1,
+    "rating": 0,
+    "mainImg": "/images/car_list/honda/honda.png",
+    "slderImge": [
+      { "alt": "car", "url": "/images/car_list/honda/honda.png" },
+      { "alt": "tire", "url": "/images/car_list/honda/tire.png" },
+      { "alt": "seats", "url": "/images/car_list/honda/seats.png" },
+      {
+        "alt": "steering wheel",
+        "url": "/images/car_list/honda/steering-wheel.png"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "make": "Kia",
+    "model": "Telluride",
+    "fuelType": "Gasoline",
+    "transmission": "Automatic",
+    "price": 37000,
+    "horsepower": 291,
+    "engine": 3800,
+    "color": "darkcyan",
+    "year": 2023,
+    "quantity": 1,
+    "rating": 0,
+    "mainImg": "/images/car_list/kia/kia.png",
+    "slderImge": [
+      { "alt": "car", "url": "/images/car_list/kia/kia.png" },
+      { "alt": "tire", "url": "/images/car_list/kia/tire.png" },
+      { "alt": "seats", "url": "/images/car_list/kia/seats.png" },
+      {
+        "alt": "steering wheel",
+        "url": "/images/car_list/kia/steering-wheel.png"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "make": "Lexus",
+    "model": "RX 500h",
+    "fuelType": "Gasoline",
+    "transmission": "Automatic",
+    "price": 62000,
+    "horsepower": 366,
+    "engine": 2400,
+    "color": "tomato",
+    "year": 2023,
+    "quantity": 1,
+    "rating": 0,
+    "mainImg": "/images/car_list/lexus/lexus.png",
+    "slderImge": [
+      { "alt": "car", "url": "/images/car_list/lexus/lexus.png" },
+      { "alt": "tire", "url": "/images/car_list/lexus/tire.png" },
+      { "alt": "seats", "url": "/images/car_list/lexus/seats.png" },
+      {
+        "alt": "steering wheel",
+        "url": "/images/car_list/lexus/steering-wheel.png"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "make": "Audi",
+    "model": "A4",
+    "fuelType": "Gasoline",
+    "transmission": "Automatic",
+    "price": 34000,
+    "horsepower": 261,
+    "engine": 1984,
+    "color": "Daytona",
+    "year": 2020,
+    "quantity": 1,
+    "rating": 0,
+    "mainImg": "/images/car_list/audi/audi.png",
+    "slderImge": [
+      { "alt": "car", "url": "/images/car_list/audi/audi.png" },
+      { "alt": "tire", "url": "/images/car_list/audi/tire.png" },
+      { "alt": "seats", "url": "/images/car_list/audi/seats.png" },
+      {
+        "alt": "steering wheel",
+        "url": "/images/car_list/audi/steering-wheel.png"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "make": "BMW",
+    "model": "540i xDrive",
+    "fuelType": "Gasoline",
+    "transmission": "Automatic",
+    "price": 62900,
+    "horsepower": 335,
+    "engine": 2998,
+    "color": "steelblue",
+    "year": 2024,
+    "quantity": 1,
+    "rating": 0,
+    "mainImg": "/images/car_list/bmw/bmw2.png",
+    "slderImge": [
+      { "alt": "car", "url": "/images/car_list/bmw/bmw2.png" },
+      { "alt": "tire", "url": "/images/car_list/bmw/tire.png" },
+      { "alt": "seats", "url": "/images/car_list/bmw/seats.png" },
+      {
+        "alt": "steering wheel",
+        "url": "/images/car_list/bmw/steering-wheel.png"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "make": "Porsche",
+    "model": "911 Carrera",
+    "fuelType": "Gasoline",
+    "transmission": "Automatic",
+    "price": 79000,
+    "horsepower": 379,
+    "engine": 3000,
+    "color": "khaki",
+    "year": 2023,
+    "quantity": 1,
+    "rating": 0,
+    "mainImg": "/images/car_list/porsche/porsche.png",
+    "slderImge": [
+      { "alt": "car", "url": "/images/car_list/porsche/porsche.png" },
+      { "alt": "tire", "url": "/images/car_list/porsche/tire.png" },
+      { "alt": "seats", "url": "/images/car_list/porsche/seats.png" },
+      {
+        "alt": "steering wheel",
+        "url": "/images/car_list/porsche/steering-wheel.png"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "make": "Tesla",
+    "model": "Model Y",
+    "fuelType": "Electric",
+    "transmission": "Automatic",
+    "price": 52490,
+    "horsepower": 456,
+    "batteryCapacity": 75,
+    "color": "red",
+    "year": 2023,
+    "quantity": 1,
+    "rating": 0,
+    "mainImg": "/images/car_list/tesla/tesla2.png",
+    "slderImge": [
+      { "alt": "car", "url": "/images/car_list/tesla/tesla2.png" },
+      { "alt": "tire", "url": "/images/car_list/tesla/tire.png" },
+      { "alt": "seats", "url": "/images/car_list/tesla/seats.png" },
+      {
+        "alt": "steering wheel",
+        "url": "/images/car_list/tesla/steering-wheel.png"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "make": "Audi",
+    "model": "SQ7",
+    "fuelType": "Gasoline",
+    "transmission": "Automatic",
+    "price": 78900,
+    "horsepower": 500,
+    "engine": 3996,
+    "color": "slategray",
+    "year": 2024,
+    "quantity": 1,
+    "rating": 0,
+    "mainImg": "/images/car_list/audi/audi3.png",
+    "slderImge": [
+      { "alt": "car", "url": "/images/car_list/audi/audi3.png" },
+      { "alt": "tire", "url": "/images/car_list/audi/tire.png" },
+      { "alt": "seats", "url": "/images/car_list/audi/seats.png" },
+      {
+        "alt": "steering wheel",
+        "url": "/images/car_list/audi/steering-wheel.png"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "make": "Subaru",
+    "model": "Outback",
+    "fuelType": "Gasoline",
+    "transmission": "Automatic",
+    "price": 34000,
+    "horsepower": 260,
+    "engine": 2500,
+    "color": "peru",
+    "year": 2023,
+    "quantity": 1,
+    "rating": 0,
+    "mainImg": "/images/car_list/subaru/subaru.png",
+    "slderImge": [
+      { "alt": "car", "url": "/images/car_list/subaru/subaru.png" },
+      { "alt": "tire", "url": "/images/car_list/subaru/tire.png" },
+      { "alt": "seats", "url": "/images/car_list/subaru/seats.png" },
+      {
+        "alt": "steering wheel",
+        "url": "/images/car_list/subaru/steering-wheel.png"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "make": "BMW",
+    "model": "X3 M40i",
+    "fuelType": "Gasoline",
+    "transmission": "Automatic",
+    "price": 58900,
+    "horsepower": 382,
+    "engine": 2998,
+    "color": "slategray",
+    "year": 2024,
+    "quantity": 1,
+    "rating": 0,
+    "mainImg": "/images/car_list/bmw/bmw3.png",
+    "slderImge": [
+      { "alt": "car", "url": "/images/car_list/bmw/bmw3.png" },
+      { "alt": "tire", "url": "/images/car_list/bmw/tire.png" },
+      { "alt": "seats", "url": "/images/car_list/bmw/seats.png" },
+      {
+        "alt": "steering wheel",
+        "url": "/images/car_list/bmw/steering-wheel.png"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "make": "Nissan",
+    "model": "Altima",
+    "fuelType": "Gasoline",
+    "transmission": "Automatic",
+    "price": 28000,
+    "horsepower": 188,
+    "engine": 2500,
+    "color": "steelblue",
+    "year": 2022,
+    "quantity": 1,
+    "rating": 0,
+    "mainImg": "/images/car_list/nissan/nissan.png",
+    "slderImge": [
+      { "alt": "car", "url": "/images/car_list/nissan/nissan.png" },
+      { "alt": "tire", "url": "/images/car_list/nissan/tire.png" },
+      { "alt": "seats", "url": "/images/car_list/nissan/seats.png" },
+      {
+        "alt": "steering wheel",
+        "url": "/images/car_list/nissan/steering-wheel.png"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "make": "Lexus",
+    "model": "LS 500 F",
+    "fuelType": "Gasoline",
+    "transmission": "Automatic",
+    "price": 67800,
+    "horsepower": 416,
+    "engine": 3444,
+    "color": "dimgray",
+    "year": 2024,
+    "quantity": 1,
+    "rating": 0,
+    "mainImg": "/images/car_list/lexus/lexus2.png",
+    "slderImge": [
+      { "alt": "car", "url": "/images/car_list/lexus/lexus2.png" },
+      { "alt": "tire", "url": "/images/car_list/lexus/tire.png" },
+      { "alt": "seats", "url": "/images/car_list/lexus/seats.png" },
+      {
+        "alt": "steering wheel",
+        "url": "/images/car_list/lexus/steering-wheel.png"
+      }
+    ]
+  }
+]

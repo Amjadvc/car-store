@@ -1,9 +1,10 @@
 import PopupNotificationDelete from "../../components/Popup/PopupNotification/PopupNotificationDelete";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useCars } from "../../context/CarItemsContext";
 import styles from "./Catalogue.module.css";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import useCarData from "../../hooks/useCarData";
 
 function createVariants(delay) {
   return {
@@ -19,54 +20,66 @@ function createVariants(delay) {
 }
 
 const pVariants = createVariants(0.7);
-const hVariants = createVariants(0.9);
-const btnOVariants = createVariants(1.1);
-const btnTVariants = createVariants(1.3);
-const imgVariants = createVariants(1.5);
-
-const matchedItem = {
-  choosenColor: "tomato",
-  color: "White",
-  colors: ["tomato", "white", "black"],
-  engine: "1.5L 4-cylinder",
-  horsepower: 158,
-  id: 2,
-  image: "https://fakeimg.pl/500x500/ffffff",
-  mainImg: "/images/honda.png",
-  make: "Honda",
-  model: "Civic",
-  price: 22000,
-  quantity: 1,
-  rating: 0,
-  slderImge: [
-    ("/images/honda.png",
-    "/images/details-Door.png",
-    "/images/details-motor.png",
-    "/images/details-Streeing.png"),
-  ],
-  year: 2021,
-};
+const h3Variants = createVariants(0.9);
+const h2Variants = createVariants(1.1);
+const btnOVariants = createVariants(1.3);
+const btnTVariants = createVariants(1.5);
+const imgVariants = createVariants(1.7);
 
 export default function Hero() {
   const { addToCart } = useCars();
+  const { result } = useCarData();
   const snackbarRef = useRef(null);
+  const [randomItem, setRandomItem] = useState(null);
+
+  useEffect(() => {
+    if (!result || result.length === 0) return;
+
+    const mostRented = result.filter(
+      (carItem) =>
+        carItem.make === "Porsche" ||
+        carItem.make === "Mercedes" ||
+        carItem.make === "Ford" ||
+        carItem.model === "Model S" ||
+        carItem.model === "LS 500 F"
+    );
+
+    let index = 1;
+    const updateRandomItem = () => {
+      setRandomItem(mostRented[index]);
+      index = (index + 1) % mostRented.length;
+    };
+
+    updateRandomItem();
+    const intervalId = setInterval(updateRandomItem, 4000);
+
+    return () => clearInterval(intervalId);
+  }, [result]);
 
   function handelBuyNow(item) {
     addToCart(item);
     snackbarRef.current.showPopupsuccs();
   }
+
+  if (!randomItem) return;
   return (
     <div className={styles.hero}>
       <div className={styles.header}>
         <motion.p variants={pVariants} initial="hidden" animate="visible">
           Meet your new car
         </motion.p>
-        <motion.h2 variants={hVariants} initial="hidden" animate="visible">
-          Honda Civic Type R
+        <motion.h3 variants={h3Variants} initial="hidden" animate="visible">
+          The Best Selling Cars Right Now
+        </motion.h3>
+        <motion.h2 variants={h2Variants} initial="hidden" animate="visible">
+          <span
+            key={randomItem.id}
+            className={styles.show}
+          >{`${randomItem.make} ${randomItem.model}`}</span>
         </motion.h2>
       </div>
       <div className={styles.btns}>
-        <Link to={`details/${matchedItem?.id}`}>
+        <Link to={`details/${randomItem?.id}`}>
           <motion.button
             variants={btnOVariants}
             initial="hidden"
@@ -81,7 +94,7 @@ export default function Hero() {
           initial="hidden"
           animate="visible"
           className={styles.buyNowBtn}
-          onClick={() => handelBuyNow(matchedItem)}
+          onClick={() => handelBuyNow(randomItem)}
         >
           Buy Now
         </motion.button>
@@ -93,7 +106,12 @@ export default function Hero() {
           animate="visible"
           className={styles.innerHeroImg}
         >
-          <img src="/images/honda.png" alt="hero imge" />
+          <img
+            key={randomItem.id}
+            src={randomItem.mainImg}
+            className={styles.show}
+            alt="hero imge"
+          />
         </motion.div>
       </div>
 
