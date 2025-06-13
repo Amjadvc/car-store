@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import styles from "./LandingPage.module.css";
-import carBg from "../../assets/svg/carBg.svg";
+import carBg from "../../assets/images/carBg.png";
 import Button from "../Button/Button";
 import { Link } from "react-router-dom";
 

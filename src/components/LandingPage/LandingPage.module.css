@@ -63,6 +63,7 @@
   position: absolute;
   right: 0;
   width: 62%;
+  margin-bottom: 60px;
 }
 
 @media (min-width: 2080px) {
@@ -117,6 +118,8 @@
 
   .landingCarBg {
     min-width: 699px;
+    margin-bottom: 0;
+    margin-top: 50px;
   }
 }
 @media (max-width: 480px) {
@@ -152,6 +155,5 @@
   }
   .landingCarBg {
     min-width: 404px;
-    margin-top: 21px;
   }
 }

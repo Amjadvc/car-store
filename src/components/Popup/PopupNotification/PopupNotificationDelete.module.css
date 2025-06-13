@@ -4,7 +4,7 @@
   align-items: center;
   width: 300px;
   height: 50px;
-  gap: 10px;
+  gap: 1px;
   font-size: 19px;
   color: var(--color-primary-2);
   font-family: sans-serif;
@@ -38,8 +38,13 @@
   }
 }
 .symbol {
-  color: #ffffff;
-  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 35px;
+}
+.symbol img {
+  width: 100%;
 }
 .addedFromHome .symbol {
   color: #ffffff;

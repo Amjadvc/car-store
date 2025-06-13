@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 import { HomeVariantsProvider } from "../../context/HomeVariantsContext";
 import useCarData from "../../hooks/useCarData";
 import { useEffect } from "react";
+import Footer from "../../components/Footer/Footer";
 
 const trackVariants = {
   hidden: { x: -100, opacity: 0 },
@@ -35,7 +36,7 @@ function Catalogue() {
 
   return (
     <div>
-      <PageNav className={` ${styles.bgColor}`} />
+      <PageNav />
       <main className={styles.catalogue}>
         <div className={`container ${styles.catalogueContainr}`}>
           <Track />
@@ -53,6 +54,7 @@ function Catalogue() {
           <ArrowToTopBtn />
         </div>
       </main>
+      <Footer />
     </div>
   );
 }

@@ -49,14 +49,10 @@
     gap: 33px;
   }
 }
-/* @media (max-width: 480px) {
-  .search {
-    padding: 0 15px;
-  }
-} */
+
 .label {
   font-size: 28px;
-  font-family: fantasy;
+  font-family: "Righteous", sans-serif;
   color: #3f3a3a;
   letter-spacing: 1px;
 }

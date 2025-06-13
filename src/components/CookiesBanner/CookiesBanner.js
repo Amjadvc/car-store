@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useCars } from "../../context/CarItemsContext";
 import { motion } from "framer-motion";
 import styles from "./CookiesBanner.module.css";
+import alertIcon from "../../assets/svg/alert-triangle.svg";
 
 const CookiesVariants = {
   hidden: {
@@ -79,7 +80,7 @@ function CookiesBanner() {
         animate="visible"
       >
         <div className={styles.warningSymbol}>
-          <span>&#9888;</span>
+          <img src={alertIcon} alt="alert-triangle" />
         </div>
         <div className={styles.warningContent}>
           <p> Warning the cart data will not be saved..</p>

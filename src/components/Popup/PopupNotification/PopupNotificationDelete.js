@@ -1,5 +1,6 @@
 import { useState, forwardRef, useImperativeHandle } from "react";
 import styles from "./PopupNotificationDelete.module.css";
+import checkIcon from "../../../assets/svg/check.svg";
 const PopupNotificationDelete = forwardRef(({ message, styless }, ref) => {
   const [showPopupDSuccess, setsShowPopupDSuccess] = useState(false);
   useImperativeHandle(ref, () => ({
@@ -16,7 +17,9 @@ const PopupNotificationDelete = forwardRef(({ message, styless }, ref) => {
         showPopupDSuccess ? styles.active : ""
       } ${styles[styless]}`}
     >
-      <div className={styles.symbol}>&#x2714;</div>
+      <div className={styles.symbol}>
+        <img src={checkIcon} alt="Check icon" />
+      </div>
       <div>{message}</div>
     </div>
   );

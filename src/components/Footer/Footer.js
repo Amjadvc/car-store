@@ -18,21 +18,40 @@ function Footer() {
     {
       name: "Menu",
       childern: [
-        { name: "Home" },
-        { name: "Car Catalogue" },
-        { name: "Services" },
+        { name: "Home", path: "/" },
+        { name: "Catalogue", path: "/catalogue" },
+        { name: "Contact Us", path: "/contact-us" },
+        { name: "Help", path: "/help" },
       ],
     },
     {
       name: "Further Information ",
-      childern: [{ name: "Terms & Conditions" }, { name: "Privicy Policy" }],
+      childern: [
+        { name: "Terms & Conditions", path: "/terms" },
+        { name: "Privacy Policy", path: "/privacy" },
+      ],
     },
     {
       name: "Contact us",
       childern: [
-        { icon: location, name: "647P+4G5,Seif Al-Doleh, Aleppo, Syria" },
-        { icon: phone, name: "+96323456" },
-        { icon: mail, name: "tagred@gmail.com" },
+        {
+          icon: location,
+          name: "Dubai, UAE",
+          type: "location",
+          link: "https://maps.app.goo.gl/hT4UcjejpczAc4yw7",
+        },
+        {
+          icon: phone,
+          name: "+971 50 123 4567",
+          type: "phone",
+          link: "tel:+971501234567",
+        },
+        {
+          icon: mail,
+          name: "tagred@gmail.com",
+          type: "email",
+          link: "mailto:tagred@gmail.com",
+        },
       ],
     },
     {

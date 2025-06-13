@@ -4,6 +4,7 @@
   width: 22px;
 }
 
-.iconSvg:hover .iconSvgPath {
+.iconSvg:hover .iconSvgPath,
+.iconSvg:hover {
   fill: var(--color-primary-1);
 }

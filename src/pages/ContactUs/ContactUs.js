@@ -8,6 +8,7 @@ import Lodaing from "../../components/Lodaing/Lodaing";
 import { useEffect, useState } from "react";
 import messageSvg from "../../assets/svg/mail-svgrepo-com.svg";
 import { motion } from "framer-motion";
+import Footer from "../../components/Footer/Footer";
 
 const conectusVariants = {
   hidden: { opacity: 0 },
@@ -40,33 +41,36 @@ function ContactUs() {
   }, [validSubmit]);
 
   return (
-    <main className={styles.contactUs}>
-      <PageNav className={styles.contactUsNav}>
-        <div className="imgBgHolder">
-          <img src={cartBg} alt="bg" className="bg"></img>
+    <>
+      <main className={styles.contactUs}>
+        <PageNav className={styles.contactUsNav}>
+          <div className="imgBgHolder">
+            <img src={cartBg} alt="bg" className="bg"></img>
+          </div>
+        </PageNav>
+
+        <div className={`container ${styles.contactUsContainer}`}>
+          <PageHeader>ContactUs</PageHeader>
+          <motion.section
+            variants={conectusVariants}
+            initial="hidden"
+            animate="visible"
+            className={styles.contactUsContent}
+          >
+            <div className={styles.content}>
+              {!validSubmit && <Form setValidSubmit={setValidSubmit} />}
+              {validSubmit && isLoading && <Lodaing />}
+              {!isLoading && validSubmit && <MessageThanks />}
+            </div>
+
+            <div className={styles.imgeContianer}>
+              <SVGComponent />
+            </div>
+          </motion.section>
         </div>
-      </PageNav>
-
-      <div className={`container ${styles.contactUsContainer}`}>
-        <PageHeader>ContactUs</PageHeader>
-        <motion.section
-          variants={conectusVariants}
-          initial="hidden"
-          animate="visible"
-          className={styles.contactUsContent}
-        >
-          <div className={styles.content}>
-            {!validSubmit && <Form setValidSubmit={setValidSubmit} />}
-            {validSubmit && isLoading && <Lodaing />}
-            {!isLoading && validSubmit && <MessageThanks />}
-          </div>
-
-          <div className={styles.imgeContianer}>
-            <SVGComponent />
-          </div>
-        </motion.section>
-      </div>
-    </main>
+      </main>
+      <Footer />
+    </>
   );
 }
 
@@ -80,7 +84,7 @@ function MessageThanks() {
       </div>
 
       <h2>Thanks for your message</h2>
-      <p>I will reply soon...</p>
+      <p>We will reply soon...</p>
     </div>
   );
 }

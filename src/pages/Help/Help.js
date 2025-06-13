@@ -5,6 +5,7 @@ import PageHeader from "../../components/PageHeader/PageHeader";
 import { faker } from "@faker-js/faker";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import Footer from "../../components/Footer/Footer";
 
 const searchVariants = {
   hidden: { x: +100, opacity: 0 },
@@ -84,72 +85,75 @@ function Help() {
   }
 
   return (
-    <main className={styles.help}>
-      <PageNav className={styles.helpNav}>
-        <div className="imgBgHolder">
-          <img src={cartBg} alt="bg" className="bg"></img>
+    <>
+      <main className={styles.help}>
+        <PageNav className={styles.helpNav}>
+          <div className="imgBgHolder">
+            <img src={cartBg} alt="bg" className="bg"></img>
+          </div>
+        </PageNav>
+
+        <div className={`container ${styles.helpContainer}`}>
+          <PageHeader>Help</PageHeader>
+
+          <section className={styles.conentContainer}>
+            <motion.div
+              variants={searchVariants}
+              initial="hidden"
+              animate="visible"
+              className={styles.search}
+            >
+              <h1 className={styles.label}>
+                Search for the most asked questions
+              </h1>
+              <div className={styles.inputContainer}>
+                <input
+                  type="text"
+                  value={queryValue}
+                  onChange={(e) => handelInput(e)}
+                  placeholder="Search questions..."
+                />
+                <button onClick={handelSearch}>Search</button>
+              </div>
+            </motion.div>
+            <motion.div
+              variants={moreVariants}
+              initial="hidden"
+              animate="visible"
+              className={styles.qustionsContainer}
+            >
+              {qustionToShow.length !== 0 ? (
+                <ul className={styles.qustions}>
+                  {qustionToShow.map((qustion, i) => (
+                    <li key={i} className={styles.qustionItem}>
+                      <h3>{qustion.title}</h3>
+                      <p>{qustion.body}</p>
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p className={styles.noResult}>There are no questions!</p>
+              )}
+            </motion.div>
+            <motion.div
+              variants={qustionsContainerVariants}
+              initial="hidden"
+              animate="visible"
+              className={styles.more}
+            >
+              {showMore === false ? (
+                ""
+              ) : more === 50 ? (
+                <p>You've loaded all questions!</p>
+              ) : (
+                <button onClick={handelMore}>Load more</button>
+              )}
+            </motion.div>
+          </section>
         </div>
-      </PageNav>
-
-      <div className={`container ${styles.helpContainer}`}>
-        <PageHeader>Help</PageHeader>
-
-        <section className={styles.conentContainer}>
-          <motion.div
-            variants={searchVariants}
-            initial="hidden"
-            animate="visible"
-            className={styles.search}
-          >
-            <h1 className={styles.label}>
-              Search for the most asked questions
-            </h1>
-            <div className={styles.inputContainer}>
-              <input
-                type="text"
-                value={queryValue}
-                onChange={(e) => handelInput(e)}
-                placeholder="Search questions..."
-              />
-              <button onClick={handelSearch}>Search</button>
-            </div>
-          </motion.div>
-          <motion.div
-            variants={moreVariants}
-            initial="hidden"
-            animate="visible"
-            className={styles.qustionsContainer}
-          >
-            {qustionToShow.length !== 0 ? (
-              <ul className={styles.qustions}>
-                {qustionToShow.map((qustion, i) => (
-                  <li key={i} className={styles.qustionItem}>
-                    <h3>{qustion.title}</h3>
-                    <p>{qustion.body}</p>
-                  </li>
-                ))}
-              </ul>
-            ) : (
-              <p className={styles.noResult}>There are no questions!</p>
-            )}
-          </motion.div>
-          <motion.div
-            variants={qustionsContainerVariants}
-            initial="hidden"
-            animate="visible"
-            className={styles.more}
-          >
-            {showMore === false ? (
-              ""
-            ) : more === 50 ? (
-              <p>You've loaded all questions!</p>
-            ) : (
-              <button onClick={handelMore}>Load more</button>
-            )}
-          </motion.div>
-        </section>
-      </div>
-    </main>
+      </main>
+      <Footer />
+    </>
   );
 }
 
