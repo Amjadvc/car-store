@@ -34,22 +34,22 @@ export default function SliderCarousel() {
   const sliderData = [
     {
       id: 1,
-      imge: "images/slider/car-porsche-unsplash.jpg",
+      imge: "images/slider/car-porsche-unsplash.webp",
       text: "Porsche",
     },
     {
       id: 2,
-      imge: "images/slider/car-bmw-unsplash.jpg",
+      imge: "images/slider/car-bmw-unsplash.webp",
       text: "Bmw",
     },
     {
       id: 3,
-      imge: "images/slider/car-mercedes-unsplash.jpg",
+      imge: "images/slider/car-mercedes-unsplash.webp",
       text: "Mercedes",
     },
     {
       id: 4,
-      imge: "images/slider/car-audi-unsplash.jpg",
+      imge: "images/slider/car-audi-unsplash.webp",
       text: "Audi",
     },
   ];

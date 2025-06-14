@@ -5,7 +5,7 @@ import { useHomeVariants } from "../../context/HomeVariantsContext";
 import Button from "../Button/Button";
 
 export default function CarItem({ item }) {
-  const { mainImge, carName, description } = item;
+  const { mainImge, description } = item;
 
   const { homeVariant } = useHomeVariants();
 
@@ -17,11 +17,15 @@ export default function CarItem({ item }) {
       whileInView="visible"
     >
       <div className={styles.imgContainer}>
-        <img className={styles.imgH} src={mainImge} alt={`car ${mainImge}`} />
+        <img
+          className={styles.imgH}
+          src={mainImge}
+          alt={`car ${mainImge}`}
+          loading="lazy"
+        />
         <span className={styles.imgInnerText}>{item.carName}</span>
       </div>
       <div className={styles.discriptionCard}>
-        {/* <h3>{carName}</h3> */}
         <div className={styles.text}>
           <p>{description.partOne}</p>
 

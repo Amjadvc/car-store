@@ -2,7 +2,7 @@
   {
     "id": 1,
     "carName": "AUDI",
-    "mainImge": "/images/categories/car-list-one.png",
+    "mainImge": "/images/categories/car-list-one.webp",
     "description": {
       "partOne": "Audi's latest models feature technology",
       "partTwo": "Experience the perfect blend",
@@ -12,7 +12,7 @@
   {
     "id": 2,
     "carName": "Honda",
-    "mainImge": "/images/categories/car-list-two.png",
+    "mainImge": "/images/categories/car-list-two.webp",
     "description": {
       "partOne": "Honda offers reliability and efficiency.",
       "partTwo": "Cutting-edge design and practical",
@@ -22,7 +22,7 @@
   {
     "id": 3,
     "carName": "VOLVO",
-    "mainImge": "/images/categories/car-list-three.png",
+    "mainImge": "/images/categories/car-list-three.webp",
     "description": {
       "partOne": "Volvo combines safety with Scandinavian.",
       "partTwo": "Luxurious interiors with modern",
@@ -32,7 +32,7 @@
   {
     "id": 4,
     "carName": "BMW",
-    "mainImge": "/images/categories/car-list-four.png",
+    "mainImge": "/images/categories/car-list-four.webp",
     "description": {
       "partOne": "BMW sets the standard for luxury modern ",
       "partTwo": "Delivering an unparalleled everyday",

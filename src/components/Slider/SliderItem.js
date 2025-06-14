@@ -9,7 +9,7 @@ function SliderItem({ item }) {
       onMouseEnter={() => setIsActiveItem(true)}
       onMouseLeave={() => setIsActiveItem(false)}
     >
-      <img src={item.imge} alt="car-slider" />
+      <img src={item.imge} alt="car-slider" loading="lazy" />
       <div
         className={`${styles.carItemOverlay} ${
           isActiveItem ? styles.activeOverlay : ""

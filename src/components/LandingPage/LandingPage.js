@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import styles from "./LandingPage.module.css";
-import carBg from "../../assets/images/carBg.png";
 import Button from "../Button/Button";
 import { Link } from "react-router-dom";
 
@@ -13,7 +12,7 @@ const contentVariants = {
     x: 0,
     opacity: 1,
     transition: {
-      delay: 0.2,
+      delay: 0.1,
       type: "spring",
       stiffness: 60,
       ease: "easeIn",
@@ -30,7 +29,7 @@ const landingCarBgVariants = {
     x: 0,
     opacity: 1,
     transition: {
-      delay: 0.2,
+      delay: 0.1,
       type: "spring",
       ease: "easeIn",
       duration: 1,
@@ -73,7 +72,8 @@ function LandingPage() {
           variants={landingCarBgVariants}
           initial="hidden"
           animate="visible"
-          src={carBg}
+          fetchpriority="high"
+          src="/images/carBg.webp"
           alt="landing-bg"
         />
       </div>

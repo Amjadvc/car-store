@@ -132,14 +132,22 @@ export default function Privacy() {
           </p>
           <p className={styles.linkBlock}>
             Contact us at
-            <a className={styles.linkTo} href="mailto:tagred@gmail.com">
+            <a
+              className={styles.linkTo}
+              href="mailto:tagred@gmail.com"
+              aria-label="mail to"
+            >
               tagred@gmail.com
             </a>
           </p>
 
           <p className={styles.linkBlock}>
             or call
-            <a className={styles.linkTo} href="tel:+971501234567">
+            <a
+              className={styles.linkTo}
+              href="tel:+971501234567"
+              aria-label="phone"
+            >
               +971 50 123 4567
             </a>
             .

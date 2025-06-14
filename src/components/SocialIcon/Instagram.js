@@ -5,6 +5,7 @@ function Instagram() {
     <a
       href="https://www.instagram.com"
       target="_blank"
+      aria-label="instagram"
       rel="noopener noreferrer"
       className={styles.iconLink}
     >

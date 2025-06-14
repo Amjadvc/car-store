@@ -5,6 +5,7 @@ function Twiter() {
     <a
       href="https://twitter.com"
       target="_blank"
+      aria-label="twitter"
       rel="noopener noreferrer"
       className={styles.iconLink}
     >

@@ -7,12 +7,14 @@ function SliderControls({ next, previous }) {
       <SliderButton
         onClick={() => previous()}
         className={`${styles.arrow} ${styles.left}`}
+        name={"left"}
       >
         <ArrowLeft />
       </SliderButton>
       <SliderButton
         onClick={() => next()}
         className={`${styles.arrow} ${styles.right}`}
+        name={"right"}
       >
         <ArrowRight />
       </SliderButton>
@@ -20,9 +22,9 @@ function SliderControls({ next, previous }) {
   );
 }
 
-function SliderButton({ onClick, children, className }) {
+function SliderButton({ onClick, children, className, name }) {
   return (
-    <button className={className} onClick={onClick}>
+    <button aria-label={name} className={className} onClick={onClick}>
       {children}
     </button>
   );

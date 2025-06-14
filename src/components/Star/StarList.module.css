@@ -9,7 +9,6 @@
 }
 
 .stars strong {
-  /* color: #00000059; */
   color: #454545;
   font-family: Righteous;
   margin-left: 10px;
@@ -22,6 +21,5 @@
     padding-top: 3px;
     font-size: 21px;
     margin-left: 5px;
-    /* padding: 0 16px; */
   }
 }

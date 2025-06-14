@@ -39,7 +39,7 @@ export default function CarItem({ item }) {
       whileInView="visible"
     >
       <div className={styles.imgeContainer}>
-        <img src={item.mainImg} alt={`car ${item.make}`} />
+        <img src={item.mainImg} alt={`car ${item.make}`} loading="lazy" />
       </div>
 
       <div className={styles.discriptionCard}>

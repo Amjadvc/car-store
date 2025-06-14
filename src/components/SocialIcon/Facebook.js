@@ -3,6 +3,7 @@ function Facebook() {
   return (
     <a
       href="https://www.facebook.com"
+      aria-label="facebook"
       target="_blank"
       rel="noopener noreferrer"
       className={styles.iconLink}

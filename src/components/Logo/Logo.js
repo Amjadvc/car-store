@@ -2,7 +2,7 @@ import styles from "./Logo.module.css";
 import { Link } from "react-router-dom";
 function Logo() {
   return (
-    <Link to="/" className={styles.logo}>
+    <Link to="/" className={styles.logo} aria-label="logo">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         height="40"
