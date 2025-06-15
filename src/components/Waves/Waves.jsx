@@ -1,4 +1,6 @@
 import styles from "./Waves.module.css";
+import React from "react";
+
 function Waves() {
   return (
     <svg

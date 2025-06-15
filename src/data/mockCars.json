@@ -15,7 +15,7 @@
     "mainImg": "/images/car_list/tesla/tesla.png",
     "slderImge": [
       { "alt": "car", "url": "/images/car_list/tesla/tesla.png" },
-      { "alt": "tire", "url": "/images/car_list/tesla/tire.png" },
+      { "alt": "tire", "url": "/images/car_list/tesla/tire.webp" },
       { "alt": "seats", "url": "/images/car_list/tesla/seats.png" },
       {
         "alt": "steering wheel",
@@ -23,7 +23,6 @@
       }
     ]
   },
-
   {
     "id": 2,
     "make": "Toyota",
@@ -40,7 +39,7 @@
     "mainImg": "/images/car_list/toyota/toyota.png",
     "slderImge": [
       { "alt": "car", "url": "/images/car_list/toyota/toyota.png" },
-      { "alt": "tire", "url": "/images/car_list/toyota/tire.png" },
+      { "alt": "tire", "url": "/images/car_list/toyota/tire.webp" },
       { "alt": "seats", "url": "/images/car_list/toyota/seats.png" },
       {
         "alt": "steering wheel",
@@ -88,11 +87,11 @@
     "mainImg": "/images/car_list/ford/ford.png",
     "slderImge": [
       { "alt": "car", "url": "/images/car_list/ford/ford.png" },
-      { "alt": "tire", "url": "/images/car_list/ford/tire.png" },
+      { "alt": "tire", "url": "/images/car_list/ford/tire.webp" },
       { "alt": "seats", "url": "/images/car_list/ford/seats.png" },
       {
         "alt": "steering wheel",
-        "url": "/images/car_list/ford/steering-wheel.png"
+        "url": "/images/car_list/ford/steering-wheel.webp"
       }
     ]
   },
@@ -112,11 +111,11 @@
     "mainImg": "/images/car_list/jeep/jeep.png",
     "slderImge": [
       { "alt": "car", "url": "/images/car_list/jeep/jeep.png" },
-      { "alt": "tire", "url": "/images/car_list/jeep/tire.png" },
-      { "alt": "seats", "url": "/images/car_list/jeep/seats.png" },
+      { "alt": "tire", "url": "/images/car_list/jeep/tire.webp" },
+      { "alt": "seats", "url": "/images/car_list/jeep/seats.webp" },
       {
         "alt": "steering wheel",
-        "url": "/images/car_list/jeep/steering-wheel.png"
+        "url": "/images/car_list/jeep/steering-wheel.webp"
       }
     ]
   },
@@ -136,8 +135,8 @@
     "mainImg": "/images/car_list/mercedes/mercedes.png",
     "slderImge": [
       { "alt": "car", "url": "/images/car_list/mercedes/mercedes.png" },
-      { "alt": "tire", "url": "/images/car_list/mercedes/tire.png" },
-      { "alt": "seats", "url": "/images/car_list/mercedes/seats.png" },
+      { "alt": "tire", "url": "/images/car_list/mercedes/tire.webp" },
+      { "alt": "seats", "url": "/images/car_list/mercedes/seats.webp" },
       {
         "alt": "steering wheel",
         "url": "/images/car_list/mercedes/steering-wheel.png"
@@ -160,11 +159,11 @@
     "mainImg": "/images/car_list/chevrolet/chevrolet.png",
     "slderImge": [
       { "alt": "car", "url": "/images/car_list/chevrolet/chevrolet.png" },
-      { "alt": "tire", "url": "/images/car_list/chevrolet/tire.png" },
+      { "alt": "tire", "url": "/images/car_list/chevrolet/tire.webp" },
       { "alt": "seats", "url": "/images/car_list/chevrolet/seats.png" },
       {
         "alt": "steering wheel",
-        "url": "/images/car_list/chevrolet/steering-wheel.png"
+        "url": "/images/car_list/chevrolet/steering-wheel.webp"
       }
     ]
   },
@@ -182,14 +181,14 @@
     "year": 2023,
     "quantity": 1,
     "rating": 0,
-    "mainImg": "/images/car_list/audi/audi2.png",
+    "mainImg": "/images/car_list/audi/audi2.webp",
     "slderImge": [
-      { "alt": "car", "url": "/images/car_list/audi/audi2.png" },
-      { "alt": "tire", "url": "/images/car_list/audi/tire.png" },
-      { "alt": "seats", "url": "/images/car_list/audi/seats.png" },
+      { "alt": "car", "url": "/images/car_list/audi/audi2.webp" },
+      { "alt": "tire", "url": "/images/car_list/audi/tire.webp" },
+      { "alt": "seats", "url": "/images/car_list/bmw/seats.png" },
       {
         "alt": "steering wheel",
-        "url": "/images/car_list/audi/steering-wheel.png"
+        "url": "/images/car_list/audi/steering-wheel.webp"
       }
     ]
   },
@@ -209,8 +208,8 @@
     "mainImg": "/images/car_list/honda/honda.png",
     "slderImge": [
       { "alt": "car", "url": "/images/car_list/honda/honda.png" },
-      { "alt": "tire", "url": "/images/car_list/honda/tire.png" },
-      { "alt": "seats", "url": "/images/car_list/honda/seats.png" },
+      { "alt": "tire", "url": "/images/car_list/honda/tire.webp" },
+      { "alt": "seats", "url": "/images/car_list/honda/seats.webp" },
       {
         "alt": "steering wheel",
         "url": "/images/car_list/honda/steering-wheel.png"
@@ -233,8 +232,8 @@
     "mainImg": "/images/car_list/kia/kia.png",
     "slderImge": [
       { "alt": "car", "url": "/images/car_list/kia/kia.png" },
-      { "alt": "tire", "url": "/images/car_list/kia/tire.png" },
-      { "alt": "seats", "url": "/images/car_list/kia/seats.png" },
+      { "alt": "tire", "url": "/images/car_list/kia/tire.webp" },
+      { "alt": "seats", "url": "/images/car_list/toyota/seats.png" },
       {
         "alt": "steering wheel",
         "url": "/images/car_list/kia/steering-wheel.png"
@@ -257,7 +256,7 @@
     "mainImg": "/images/car_list/lexus/lexus.png",
     "slderImge": [
       { "alt": "car", "url": "/images/car_list/lexus/lexus.png" },
-      { "alt": "tire", "url": "/images/car_list/lexus/tire.png" },
+      { "alt": "tire", "url": "/images/car_list/lexus/tire.webp" },
       { "alt": "seats", "url": "/images/car_list/lexus/seats.png" },
       {
         "alt": "steering wheel",
@@ -278,14 +277,14 @@
     "year": 2020,
     "quantity": 1,
     "rating": 0,
-    "mainImg": "/images/car_list/audi/audi.png",
+    "mainImg": "/images/car_list/audi/audi.webp",
     "slderImge": [
-      { "alt": "car", "url": "/images/car_list/audi/audi.png" },
-      { "alt": "tire", "url": "/images/car_list/audi/tire.png" },
-      { "alt": "seats", "url": "/images/car_list/audi/seats.png" },
+      { "alt": "car", "url": "/images/car_list/audi/audi.webp" },
+      { "alt": "tire", "url": "/images/car_list/audi/tire.webp" },
+      { "alt": "seats", "url": "/images/car_list/bmw/seats.png" },
       {
         "alt": "steering wheel",
-        "url": "/images/car_list/audi/steering-wheel.png"
+        "url": "/images/car_list/audi/steering-wheel.webp"
       }
     ]
   },
@@ -302,9 +301,9 @@
     "year": 2024,
     "quantity": 1,
     "rating": 0,
-    "mainImg": "/images/car_list/bmw/bmw2.png",
+    "mainImg": "/images/car_list/bmw/bmw2.webp",
     "slderImge": [
-      { "alt": "car", "url": "/images/car_list/bmw/bmw2.png" },
+      { "alt": "car", "url": "/images/car_list/bmw/bmw2.webp" },
       { "alt": "tire", "url": "/images/car_list/bmw/tire.png" },
       { "alt": "seats", "url": "/images/car_list/bmw/seats.png" },
       {
@@ -329,7 +328,7 @@
     "mainImg": "/images/car_list/porsche/porsche.png",
     "slderImge": [
       { "alt": "car", "url": "/images/car_list/porsche/porsche.png" },
-      { "alt": "tire", "url": "/images/car_list/porsche/tire.png" },
+      { "alt": "tire", "url": "/images/car_list/porsche/tire.webp" },
       { "alt": "seats", "url": "/images/car_list/porsche/seats.png" },
       {
         "alt": "steering wheel",
@@ -353,7 +352,7 @@
     "mainImg": "/images/car_list/tesla/tesla2.png",
     "slderImge": [
       { "alt": "car", "url": "/images/car_list/tesla/tesla2.png" },
-      { "alt": "tire", "url": "/images/car_list/tesla/tire.png" },
+      { "alt": "tire", "url": "/images/car_list/tesla/tire.webp" },
       { "alt": "seats", "url": "/images/car_list/tesla/seats.png" },
       {
         "alt": "steering wheel",
@@ -374,14 +373,14 @@
     "year": 2024,
     "quantity": 1,
     "rating": 0,
-    "mainImg": "/images/car_list/audi/audi3.png",
+    "mainImg": "/images/car_list/audi/audi3.webp",
     "slderImge": [
-      { "alt": "car", "url": "/images/car_list/audi/audi3.png" },
-      { "alt": "tire", "url": "/images/car_list/audi/tire.png" },
-      { "alt": "seats", "url": "/images/car_list/audi/seats.png" },
+      { "alt": "car", "url": "/images/car_list/audi/audi3.webp" },
+      { "alt": "tire", "url": "/images/car_list/audi/tire.webp" },
+      { "alt": "seats", "url": "/images/car_list/bmw/seats.png" },
       {
         "alt": "steering wheel",
-        "url": "/images/car_list/audi/steering-wheel.png"
+        "url": "/images/car_list/audi/steering-wheel.webp"
       }
     ]
   },
@@ -401,7 +400,7 @@
     "mainImg": "/images/car_list/subaru/subaru.png",
     "slderImge": [
       { "alt": "car", "url": "/images/car_list/subaru/subaru.png" },
-      { "alt": "tire", "url": "/images/car_list/subaru/tire.png" },
+      { "alt": "tire", "url": "/images/car_list/subaru/tire.webp" },
       { "alt": "seats", "url": "/images/car_list/subaru/seats.png" },
       {
         "alt": "steering wheel",
@@ -449,7 +448,7 @@
     "mainImg": "/images/car_list/nissan/nissan.png",
     "slderImge": [
       { "alt": "car", "url": "/images/car_list/nissan/nissan.png" },
-      { "alt": "tire", "url": "/images/car_list/nissan/tire.png" },
+      { "alt": "tire", "url": "/images/car_list/nissan/tire.webp" },
       { "alt": "seats", "url": "/images/car_list/nissan/seats.png" },
       {
         "alt": "steering wheel",
@@ -473,7 +472,7 @@
     "mainImg": "/images/car_list/lexus/lexus2.png",
     "slderImge": [
       { "alt": "car", "url": "/images/car_list/lexus/lexus2.png" },
-      { "alt": "tire", "url": "/images/car_list/lexus/tire.png" },
+      { "alt": "tire", "url": "/images/car_list/lexus/tire.webp" },
       { "alt": "seats", "url": "/images/car_list/lexus/seats.png" },
       {
         "alt": "steering wheel",
